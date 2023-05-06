@@ -1,8 +1,6 @@
 //Listen for submit action
 
-document
-  .getElementById("loan-form")
-  .addEventListener("submit", calculteResults);
+document.getElementById("loan-form").addEventListener("click", calculteResults);
 
 //Result calculations
 function calculteResults(e) {
@@ -33,17 +31,4 @@ function calculteResults(e) {
   } else {
     showError("Please check entered number");
   }
-
-  e.preventDefault();
-}
-function showError(error) {
-  const errorDiv = document.createElement("div");
-
-  //get element
-  const card = document.querySelector(".card");
-  const heading = document.querySelector(".heading");
-
-  errorDiv.className = "alert alert-danger";
-  errorDiv.appendChild(document.createTextNode(error));
-  Clipboard.insertBefore(errorDiv, heading);
 }
