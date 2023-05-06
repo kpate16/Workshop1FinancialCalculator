@@ -20,54 +20,56 @@
                     <form action="" id="loan-form">
                         <div class="form-group m-3 ">
                             <div class="input-group">
-                                <span class="input-group-text">$</span>
+                                <span class="input-group-text">Amount $</span>
                                 <input type="number" class="form-control" id="amount" placeholder="Amount">
                             </div>
                         </div>
 
                         <div class="form-group m-3">
                             <div class="input-group">
-                                <span class="input-group-text">%</span>
+                                <span class="input-group-text">Intrest %</span>
                                 <input type="text" class="form-control" id="interest" placeholder="Interest">
                             </div>
                         </div>
                         <div class="form-group m-3">
                             <div class="input-group">
+                                <span class="input-group-text">Years</span>
                                 <input type="text" class="form-control" id="years" placeholder="Years to pay">
                             </div>
                         </div>
                         <div class="form-group m-3">
                             <div class="input-group">
-                                <input type="submit" value="Calculate" class=" form-control btn btn-success m-2">
+                                <input type="button" value="Calculate" class=" form-control btn btn-success m-2">
                                 <!-- <input type="button" value="reset" id="reset" class=" form-control btn btn-danger m-2"> -->
+                                <button class="form-control btn btn-danger m-2" type="reset">Reset</button>
 
+
+                            </div>
+                        </div>
+                        <!-- Result -->
+                        <div>
+                            <h5>Result</h5>
+                            <div class="form-group m-3">
+                                <div class="input-group">
+                                    <span class="input-group-text">Monthly Payment</span>
+                                    <input type="number" class="form-control" id="monthly-payment" disabled>
+                                </div>
+                            </div>
+                            <div class="form-group m-3">
+                                <div class="input-group">
+                                    <span class="input-group-text">Total Amount</span>
+                                    <input type="number" class="form-control" id="total-payment" disabled>
+
+                                </div>
+                            </div>
+                            <div class="form-group m-3">
+                                <div class="input-group">
+                                    <span class="input-group-text">Total Interest</span>
+                                    <input type="number" class="form-control" id="total-interest" disabled>
+                                </div>
                             </div>
                         </div>
                     </form>
-
-                    <!-- Result -->
-                    <div>
-                        <h5>Result</h5>
-                        <div class="form-group m-3">
-                            <div class="input-group">
-                                <span class="input-group-text">Monthly Payment</span>
-                                <input type="number" class="form-control" id="monthly-payment" readonly>
-                            </div>
-                        </div>
-                        <div class="form-group m-3">
-                            <div class="input-group">
-                                <span class="input-group-text">Total Amount</span>
-                                <input type="number" class="form-control" id="total-payment" readonly>
-
-                            </div>
-                        </div>
-                        <div class="form-group m-3">
-                            <div class="input-group">
-                                <span class="input-group-text">Total Interest</span>
-                                <input type="number" class="form-control" id="total-interest" readonly>
-                            </div>
-                        </div>
-                    </div>
             </div>
         </div>
     </div>
